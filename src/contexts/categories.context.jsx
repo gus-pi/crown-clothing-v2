@@ -14,15 +14,6 @@ export const CategoriesProvider = ({ children }) => {
 
   const value = { categoriesMap };
 
-  useEffect(() => {
-    const getCategoriesMap = async () => {
-      const categoryMap = await getCategoriesAndDocuments();
-      setCategoriesMap(categoryMap);
-    };
-
-    getCategoriesMap();
-  }, []);
-
   // useEffect(() => {
   //   addCollectionAndDocuments('categories', SHOP_DATA);
   // }, []);
